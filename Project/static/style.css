@@ -1,0 +1,8 @@
+td {
+	padding: 3px;
+}
+
+.no-margin-padding-top {
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+}

@@ -1,0 +1,72 @@
+ID,Control,Level,No
+C1,Automated Inventory Scanning and Management,Implement Once,1
+C1,Automated Inventory Scanning and Management,Yearly,2
+C1,Automated Inventory Scanning and Management,Monthly,3
+C1,Automated Inventory Scanning and Management,Weekly,4
+C1,Automated Inventory Scanning and Management,Daily/ On Demand,5
+C2,Automated Patching Tools,Implement Once,1
+C2,Automated Patching Tools,Yearly,2
+C2,Automated Patching Tools,Monthly,3
+C2,Automated Patching Tools,Weekly,4
+C2,Automated Patching Tools,Daily/ On Demand,5
+C3,Automated Vulnerability Scanning Tools,Yearly,1
+C3,Automated Vulnerability Scanning Tools,Monthly,2
+C3,Automated Vulnerability Scanning Tools,Weekly,3
+C3,Automated Vulnerability Scanning Tools,Daily/ On Demand,4
+C4,Anti-Malware Software,Yearly,1
+C4,Anti-Malware Software,Monthly,2
+C4,Anti-Malware Software,Weekly,3
+C4,Anti-Malware Software,Daily/ On Demand,4
+C5,Deployment of Network Firewalls,Lax,1
+C5,Deployment of Network Firewalls,Moderate,2
+C5,Deployment of Network Firewalls,Strict,3
+C6,Host Based IPS,Lax,1
+C6,Host Based IPS,Moderate,2
+C6,Host Based IPS,Strict,3
+C7,Deploy Web Application Firewalls,Lax,1
+C7,Deploy Web Application Firewalls,Moderate,2
+C7,Deploy Web Application Firewalls,Strict,3
+C8,Deploy DLP Based Systems,Implement Once,1
+C9,Use of Secure Config for OS,Basic,1
+C9,Use of Secure Config for OS,Advanced,2
+C9,Use of Secure Config for OS,Complete,3
+C10,Execution Control on Removable Media,Lax,1
+C10,Execution Control on Removable Media,Moderate,2
+C10,Execution Control on Removable Media,Strict,3
+C11,Employ Wireless Devices Authentication Configuration,Implement Once,1
+C12,Secure Configuration Controls for All Devices,Basic,1
+C12,Secure Configuration Controls for All Devices,Advanced,2
+C12,Secure Configuration Controls for All Devices,Complete,3
+C13,Employ Port Scanning and Control Tools,Yearly,1
+C13,Employ Port Scanning and Control Tools,Monthly,2
+C13,Employ Port Scanning and Control Tools,Weekly,3
+C13,Employ Port Scanning and Control Tools,Daily/ On Demand,4
+C14,Deploy Network Based IDS,Basic,1
+C14,Deploy Network Based IDS,Advanced,2
+C14,Deploy Network Based IDS,Complete,3
+C15,Deploy Network Based Proxies,Implement Once,1
+C16,Deployment of VLANs for Sensitive Operations,Implement Once,1
+C17,Segmentation of Network Based on Trust Levels,Implement Once,1
+C18,Network Data Encryption,Implement Once,1
+C19,Application Whitelisting,Lax,1
+C19,Application Whitelisting,Moderate,2
+C19,Application Whitelisting,Strict,3
+C19,Application Whitelisting,Business Needs,4
+C20,Access Control,Basic,1
+C20,Access Control,Advanced,2
+C20,Access Control,Complete,3
+C21,Website Whitelisting,Lax,1
+C21,Website Whitelisting,Moderate,2
+C21,Website Whitelisting,Strict,3
+C21,Website Whitelisting,Business Needs,4
+C22,Network Log Reporting,Implement Once,1
+C24,User Training and Education,Yearly,1
+C24,User Training and Education,Monthly,2
+C24,User Training and Education,Weekly,3
+C24,User Training and Education,Daily/ On Demand,4
+C25,Strong Secure Password Policy,Lax,1
+C25,Strong Secure Password Policy,Moderate,2
+C25,Strong Secure Password Policy,Strict,3
+C26,Incident Handling and Response Policies,Implement Once,1
+C27,Penetration Testing,Yearly,1
+C27,Penetration Testing,Monthly,2

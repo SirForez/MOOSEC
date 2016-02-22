@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Importing Google Icon Fonts -->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Importing materialize.css -->
+		<link type="text/css" rel="stylesheet" href="../static/materialize.css" media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../static/style.css" media="screen,projection"/>
+
+        <title>MOOSEC</title>
+    </head>
+    <body>
+        <nav class="grey darken-3" role="navigation">
+            <div class="nav-wrapper container">
+	        	<a id="logo-container" href="#" class="brand-logo">Multi-Objective Optimal cyber-SECurity planning (MOOSEC)</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+		    		<div class="col l6 m6 s12">
+		        		<div class="row">
+			    			<div id="parameter-controls-area" class="col l12 m12 s12">
+		                		<h5>Parameters:</h5>
+								<form action="#">
+								    <p><b>Combined effect of cyber-security controls:</b></p>
+								    <p>
+								        <input class="with-gap" name="cyber-sec-control" type="radio" id="cybersec-complementary-radio-button" value="additive" checked />
+										<label for="cybersec-complementary-radio-button">Additive</label>
+										<input class="with-gap" name="cyber-sec-control" type="radio" id="cybersec-independant-radio-button" value="multiplicative" />
+										<label for="cybersec-independant-radio-button">Multiplicative</label>
+				                        <input class="with-gap" name="cyber-sec-control" type="radio" id="cybersec-substitutes-radio-button" value="best-of" />
+										<label for="cybersec-substitutes-radio-button">Best-of</label>
+								    </p>
+								    <p><b>Threat type:</b></p>
+								    <p>
+								        <input class="with-gap" name="cyber-threat-control" type="radio" id="cyberthreat-passive-radio-button" value="passive" checked />
+										<label for="cyberthreat-passive-radio-button">Passive</label>
+										<input class="with-gap" name="cyber-threat-control" type="radio" id="cyberthreat-reactive-radio-button" value="reactive" />
+										<label for="cyberthreat-reactive-radio-button">Reactive</label>
+										<input class="with-gap" name="cyber-threat-control" type="radio" id="cyberthreat-persistent-radio-button" value="persistent" />
+										<label for="cyberthreat-persistent-radio-button">Persistent</label>
+								    </p>
+								    <div id="ranges-for-parameter-area">
+                                        <p class="range-field">
+					    					<div class="col l6 m6 s12">
+					        					<label for="budget-range-slider"><b>Budget</b></label>
+					        					<input type="range" id="budget-range-slider" min="0" max="15.0" step="0.25" />
+					    					</div>
+					    					<div class="col l6 m6 s12">
+					        					<label for="relativegain-range-slider"><b>Relative Gain</b></label>
+					        					<input type="range" id="relativegain-range-slider" min="0" max="1.0" step="0.05" />
+					    					</div>
+										</p>
+									</div>
+								    <div id="button-area">
+								       <a id="controls-btn" class="waves-effect waves-light btn">Controls</a>
+								       <a id="vulnerabilities-btn" class="waves-effect waves-light btn">Vulnerabilities</a>
+								       <a id="pareto-btn" class="waves-effect waves-light btn">Pareto Front</a>
+								    </div>
+								</form>
+		            		</div>
+						</div>
+						<div class="row">
+		            		<div id="calculation-chart-output-area" class="col l12 m12 s12">
+		                		<h5>Plots:</h5>
+								<div id="chart-area">
+								    <p class="center-align"><b>Pareto-optimal Front(ier)</b></p>
+								    <canvas id="pareto-optimal-chart" width="500" height="300"></canvas>
+								</div>
+		           			</div>
+						</div>
+	    			</div>
+	    			<div class="col l6 m6 s12">
+		        		<div id="string-table-output-area" class="col l12 m12 s12">
+				            <h5>Optimal Controls:</h5>
+					    	<p id="mode-text-paragraph">Mode: additive and passive</p>
+					    	<div class="portfolio-table-area">
+					        	<p><b>Optimal portfolio:</b></p>
+                               	<table>
+			    					<thead>
+									    <tr>
+										    <th data-field="ID">ID</th>
+										    <th data-field="Control">Control</th>
+										    <th data-field="Level">Level</th>
+										    <th data-field="Number">No.</th>
+										</tr>
+			    					</thead>
+			    					<tbody id="optimal-portfolio-table-body"></tbody>
+								</table>
+			    			</div>
+			    			<div class="portfolio-text-area">
+			        			<div class="solution-performance-area">
+                                   	<p><b>Solution performance:</b></p>
+                                   	<div class="input-field col s12">
+                                       	<textarea id="solution-performance-textarea" class="no-margin-padding-top materialize-textarea" length="1000"></textarea>
+	                                       <!--<label for="solution-performance-textarea">Solution performance:</label>-->
+								    </div>
+								</div>
+								<div class="optimisation-area">
+                                   	<p><b>Optimisation statistics:</b></p>
+                                   	<div class="input-field col s12">
+                                       	<textarea id="optimisation-stat-textarea" class="no-margin-padding-top materialize-textarea" length="1000"></textarea>
+                                       	<!--<label for="optimisation-stat-textarea">Optimisation statistics:</label>-->
+				    				</div>
+								</div>
+			    			</div>
+		        		</div>
+		    		</div>
+				</div>
+           	</div>
+       	</div>
+       	<footer class="page-footer grey darken-2">
+           	<div class="container">
+               	<div class="row">
+                   	<div class="col l6 s12">
+                        <h5 class="white-text">Project info</h5>
+                        <p class="grey-text text-lighten-4">Maybe some project info here...</p>
+                   	</div>
+               	</div>
+           	</div>
+        </footer>
+        <!-- Importing jQuery before materialize.js -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../static/materialize.js"></script>
+		<script type="text/javascript" src="../static/Chart.js"></script>
+		<script type="text/javascript" src="../static/index.js"></script>
+    </body>
+</html>
